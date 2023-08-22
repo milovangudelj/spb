@@ -1,0 +1,45 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply font-karla;
+  }
+
+  .text-d1,
+	.text-d1-mobile,
+	.text-d2,
+	.text-d2-mobile,
+	h1,
+	.text-h1,
+	.text-h1-mobile,
+	h2,
+	.text-h2,
+	.text-h2-mobile,
+	h3,
+	.text-h3,
+	.text-h3-mobile,
+	h4,
+	.text-h4,
+	.text-h4-mobile,
+	h5,
+	.text-h5,
+	.text-h5-mobile,
+	h6,
+	.text-h6,
+	.text-h6-mobile,
+	.text-sub-heading,
+	.text-sub-heading-mobile,
+	button,
+	.text-button,
+	.text-button-md,
+	.text-button-sm {
+		@apply font-lora;
+	}
+
+	p {
+		@apply max-w-[680px] text-body;
+	}
+}
+
+@tailwind components;
+@tailwind utilities;
