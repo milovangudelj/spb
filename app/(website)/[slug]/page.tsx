@@ -1,4 +1,4 @@
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata, ResolvingMetadata, ResolvedMetadata } from "next";
 import { Module } from "~/components/modules";
 import { getPageBySlug, getPageSlugs } from "~/sanity/lib/client";
 import { urlForImage } from "~/sanity/lib/image";
@@ -22,13 +22,13 @@ export const generateStaticParams = async () => {
 
 export async function generateMetadata(
   { params, searchParams }: PageProps,
-  parent?: ResolvingMetadata,
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const page = await getPage(params.slug);
 
-  const previousImages = (await parent)?.openGraph?.images || [];
+  const previousImages = (await parent).openGraph?.images || [];
   const previousMetaBase =
-    (await parent)?.metadataBase ||
+    (await parent).metadataBase ||
     new URL(process.env.NEXT_PUBLIC_WEBSITE_URL!);
 
   return {
