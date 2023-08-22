@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
+    "@sanity/dashboard": "^3.1.5",
     "@sanity/image-url": "1",
     "@sanity/ui": "^1.7.8",
     "@sanity/vision": "3",
@@ -27,6 +28,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sanity": "3",
+    "sanity-plugin-dashboard-widget-vercel": "^2.0.1",
     "styled-components": "5.2",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
