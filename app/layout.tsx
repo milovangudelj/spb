@@ -1,17 +1,19 @@
-import { Karla, Lora } from "next/font/google";
+import localFont from "next/font/local";
 
-const karla = Karla({ subsets: ["latin"], variable: "--font-karla" });
-const lora = Lora({
-  subsets: ["latin"],
-  variable: "--font-lora",
+const grtsk = localFont({
+  src: "../public/fonts/Grtsk-Variable.ttf",
+  weight: "100 700",
+  variable: "--font-grtsk",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${karla.variable} ${lora.variable} bg-zinc-950 text-white`}
-      >
+      <body className={`${grtsk.variable} bg-zinc-950 text-white`}>
         {children}
       </body>
     </html>

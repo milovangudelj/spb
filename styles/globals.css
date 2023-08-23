@@ -1,8 +1,15 @@
 @tailwind base;
 
 @layer base {
+	:root {
+		--fv-wght: "wght" 400;
+		--fv-slnt: "slnt" 0;
+		--fv-wdth: "wdth" 100;
+		--fv-opsz: "opsz" 14;
+	}
+
   body {
-    @apply font-karla;
+    @apply font-grtsk text-body fv-weight-normal;
   }
 
   .text-d1,
@@ -33,11 +40,11 @@
 	.text-button,
 	.text-button-md,
 	.text-button-sm {
-		@apply font-lora;
+		@apply fv-weight-bold;
 	}
 
 	p {
-		@apply max-w-[680px] text-body;
+		@apply max-w-[680px];
 	}
 }
 

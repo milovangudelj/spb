@@ -1,5 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
+
+import { fontVariationPlugin } from "./styles/fontVariationPlugins";
 
 const config: Config = {
   content: [
@@ -9,10 +11,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ["var(--font-karla)", ...defaultTheme.fontFamily.sans],
-      karla: ["var(--font-karla)", ...defaultTheme.fontFamily.sans],
-      serif: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
-      lora: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
+      sans: ["var(--font-grtsk)", ...defaultTheme.fontFamily.sans],
+      grtsk: ["var(--font-grtsk)", ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
       d1: [
@@ -230,6 +230,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [fontVariationPlugin],
 };
-export default config
+export default config;

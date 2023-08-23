@@ -6,7 +6,7 @@ export const Navbar = ({ links }: { links: SanityLink[] }) => {
     <div className="sticky top-0 z-10 bg-zinc-950/50 px-8 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between py-2">
         <Link href="/" className="text-h6">
-          Sanity Page Builder
+          SPB
         </Link>
         <nav>
           <ul className="flex items-center">

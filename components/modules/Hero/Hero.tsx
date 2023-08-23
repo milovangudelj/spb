@@ -22,7 +22,7 @@ export const HeroModule = ({
         alt={photo.alt}
       />
       <div className="relative mx-auto flex max-w-7xl flex-col gap-8 py-32">
-        <h1 className="max-w-[680px] text-d1-mobile text-white md:text-d1">
+        <h1 className="fv-width-150 text-h1-mobile text-white md:text-h1">
           {title}
         </h1>
         <p>{content}</p>
