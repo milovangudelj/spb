@@ -56,11 +56,7 @@ export const pagesMenu = (S: StructureBuilder) =>
                     .documentId(doc._id)
                     .title(`${doc.title} Page`)
                     .schemaType("page");
-                })
-                .canHandleIntent(
-                  (intent, { type }) =>
-                    ["create", "edit"].includes(intent) && type === "page",
-                ),
+                }),
             ),
           S.divider(),
           S.listItem()
