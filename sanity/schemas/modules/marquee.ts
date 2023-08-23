@@ -8,6 +8,13 @@ export const marqueeModule = defineType({
   icon: Images,
   fields: [
     defineField({
+      title: "Module ID",
+      name: "moduleId",
+      type: "string",
+      description:
+        "This is used to link to this module from the navigation links.",
+    }),
+    defineField({
       name: "images",
       title: "Images",
       type: "array",

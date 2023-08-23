@@ -3,6 +3,7 @@ import { urlForImage } from "~/sanity/lib/image";
 import { type _HeroModule } from "~/sanity/lib/types";
 
 export const HeroModule = ({
+  moduleId,
   title,
   content,
   withButton,
@@ -10,7 +11,7 @@ export const HeroModule = ({
   photo,
 }: _HeroModule) => {
   return (
-    <div className="overflow-hidden px-8">
+    <div className="overflow-hidden px-8" id={moduleId}>
       <div className="mx-auto flex max-w-7xl justify-between py-32">
         <div className="flex flex-col gap-8">
           <h1 className="fv-width-150 text-h1-mobile text-white md:text-h1">

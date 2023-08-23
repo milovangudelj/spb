@@ -25,6 +25,7 @@ export type ExpandedImage = FullImage & {
 
 export type _HeroModule = {
   _type: "hero";
+  moduleId?: string;
   title: string;
   content: string;
   withButton: boolean;
@@ -34,6 +35,7 @@ export type _HeroModule = {
 
 export type _MarqueeModule = {
   _type: "marquee";
+  moduleId?: string;
   images: ExpandedImage[];
 };
 
@@ -78,6 +80,8 @@ export type PageLink = {
   _key: string;
   _type: "pageLink";
   label: string;
+  linkToModule: boolean;
+  moduleId: string | null;
   slug: Slug;
   page: Reference;
 };

@@ -14,7 +14,9 @@ export const Navbar = ({ links }: { links: SanityLink[] }) => {
               <li key={link._key}>
                 {link._type === "pageLink" ? (
                   <Link
-                    href={link.slug.current}
+                    href={`${link.slug.current}${
+                      link.linkToModule ? `#${link.moduleId}` : ""
+                    }`}
                     className="px-4 py-2 text-button text-white/70 transition hover:text-white"
                   >
                     {link.label}

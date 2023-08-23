@@ -3,9 +3,9 @@ import { ComponentProps } from "react";
 import { urlForImage } from "~/sanity/lib/image";
 import { ExpandedImage, _MarqueeModule } from "~/sanity/lib/types";
 
-export const MarqueeModule = ({ images }: _MarqueeModule) => {
+export const MarqueeModule = ({ moduleId, images }: _MarqueeModule) => {
   return (
-    <div className="mt-8 flex select-none overflow-hidden">
+    <div className="mt-8 flex select-none overflow-hidden" id={moduleId}>
       <MarqueeImages images={images} />
       <MarqueeImages images={images} aria-hidden="true" />
     </div>

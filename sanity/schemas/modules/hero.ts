@@ -14,6 +14,13 @@ export const heroModule = defineType({
       type: "string",
     }),
     defineField({
+      title: "Module ID",
+      name: "moduleId",
+      type: "string",
+      description:
+        "This is used to link to this module from the navigation links.",
+    }),
+    defineField({
       title: "Overlay Content",
       name: "content",
       type: "string",
@@ -22,6 +29,7 @@ export const heroModule = defineType({
       title: "With Button",
       name: "withButton",
       type: "boolean",
+      initialValue: false,
     }),
     defineField({
       title: "Button Text",
@@ -43,9 +51,6 @@ export const heroModule = defineType({
         return "If 'With Button' is checked, 'Button Text' must be filled out.";
       return true;
     }),
-  initialValue: {
-    withButton: false,
-  },
   preview: {
     select: {
       photo: "photo",

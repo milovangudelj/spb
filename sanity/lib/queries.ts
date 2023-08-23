@@ -72,6 +72,8 @@ export const siteNavigationQuery = groq`
       _type == "pageLink" => @{
         ...,
         "slug": page->slug,
+        linkToModule == true => { moduleId },
+        linkToModule != true => { "moduleId": null },
       },
       _type == "externalLink" => @
     }
