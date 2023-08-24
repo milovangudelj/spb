@@ -1,14 +1,7 @@
 @tailwind base;
 
 @layer base {
-	:root {
-		--fv-wght: "wght" 400;
-		--fv-slnt: "slnt" 0;
-		--fv-wdth: "wdth" 100;
-		--fv-opsz: "opsz" 14;
-	}
-
-  body {
+	body {
     @apply font-grtsk text-body fv-weight-normal;
   }
 

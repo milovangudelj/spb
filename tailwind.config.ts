@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
-import { fontVariationPlugin } from "./styles/fontVariationPlugins";
+import { fontVariationPlugin } from "./styles/fontVariationPlugin";
 
 const config: Config = {
   content: [

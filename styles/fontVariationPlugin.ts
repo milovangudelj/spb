@@ -1,7 +1,15 @@
 import plugin from "tailwindcss/plugin";
 
 export const fontVariationPlugin = plugin(
-  function ({ matchUtilities, theme }) {
+  function ({ addBase, matchUtilities, theme }) {
+    addBase({
+      ":root": {
+        "--fv-wght": '"wght" 400',
+        "--fv-slnt": '"slnt" 0',
+        "--fv-wdth": '"wdth" 100',
+        "--fv-opsz": '"opsz" 14',
+      },
+    });
     matchUtilities(
       {
         "fv-weight": (value) => ({
