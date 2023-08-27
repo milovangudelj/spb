@@ -14,6 +14,7 @@
     "@sanity/image-url": "1",
     "@sanity/ui": "^1.7.8",
     "@sanity/vision": "3",
+    "@t3-oss/env-nextjs": "^0.6.1",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
@@ -31,6 +32,7 @@
     "sanity-plugin-dashboard-widget-vercel": "^2.0.1",
     "styled-components": "5.2",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "zod": "^3.22.2"
   }
 }

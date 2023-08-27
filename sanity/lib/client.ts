@@ -1,6 +1,7 @@
 import { createClient } from "next-sanity";
+import { env } from "~/env/client.mjs";
 
-import { apiVersion, dataset, projectId, useCdn } from "~/sanity/env";
+import { useCdn } from "~/sanity/env";
 import {
   errorPageQuery,
   homePageQuery,
@@ -18,9 +19,9 @@ import {
 } from "~/sanity/lib/types";
 
 export const client = createClient({
-  apiVersion,
-  dataset,
-  projectId,
+  apiVersion: env.NEXT_PUBLIC_SANITY_API_VERSION,
+  dataset: env.NEXT_PUBLIC_SANITY_DATASET,
+  projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   useCdn,
 });
 
